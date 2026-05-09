@@ -1078,7 +1078,21 @@ def _logic_upload_file(message):
     current_files = get_user_file_count(user_id)
     if current_files >= file_limit:
         limit_str = str(file_limit) if file_limit != float('inf') else "Unlimited"
-        bot.reply_to(message, f"You don't have any subscription, buy subscription for 30 INR (0.4$) Per month to host your bot. Contact owner to buy subscription now.")
+        bot.reply_to(message, f"❌ Kamu belum memiliki subscription.
+
+Untuk menjalankan bot, kamu perlu membeli subscription terlebih dahulu.
+
+💳 Harga Subscription:
+Rp5.000 / bulan
+
+✅ Benefit:
+- Bisa host bot Telegram
+- Support Python & Node.js
+- Upload file .py / .js / .zip
+- Start / Stop / Restart bot
+- Logs & monitoring
+
+📞 Hubungi owner/admin untuk membeli subscription sekarang.")
         return
     bot.reply_to(message, "📤 Send your Python (`.py`), JS (`.js`), or ZIP (`.zip`) file.")
 
