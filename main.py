@@ -1078,7 +1078,7 @@ def _logic_upload_file(message):
     current_files = get_user_file_count(user_id)
     if current_files >= file_limit:
         limit_str = str(file_limit) if file_limit != float('inf') else "Unlimited"
-        bot.reply_to(message, f"Kamu belum memiliki akses, beli akses seharga Rp5.000 per bulan untuk menghost bot kamu. Hubungi owner untuk membeli akses sekarang")
+        bot.reply_to(message, f"Kamu belum memiliki akses, Hubungi owner untuk meminta akses sekarang")
         return
     bot.reply_to(message, "📤 Send your Python (`.py`), JS (`.js`), or ZIP (`.zip`) file.")
 
