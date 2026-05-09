@@ -1,5 +1,0 @@
-[phases.setup]
-nixPkgs = ["python313", "nodejs_22"]
-
-[start]
-cmd = "python main.py"
